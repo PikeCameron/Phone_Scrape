@@ -1,5 +1,5 @@
-import puppeteer from "puppeteer";
-import readline from "readline";
+const puppeteer = require("puppeteer");
+const readline = require("readline");
 
 const rl = readline.createInterface({
   input: process.stdin,
