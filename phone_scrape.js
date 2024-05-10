@@ -7,7 +7,6 @@ const rl = readline.createInterface({
 });
 
 async function scrapeWebsite(phoneNumber) {
-  // Remove spaces and replace them with dashes for the URL
   const formattedPhoneNumber = phoneNumber.replace(/\s/g, "-");
   const url = `https://www.whitepages.com/phone/${formattedPhoneNumber}`;
 
@@ -56,7 +55,6 @@ async function main() {
     );
   });
 
-  // Split by semicolons or spaces, excluding (801) from splitting
   const phoneNumbersList = phoneNumbersInput.match(
     /\+?\d[\d -]*\d|\(\d+\) \d+-?\d+/g
   );
